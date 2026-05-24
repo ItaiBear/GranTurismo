@@ -100,7 +100,7 @@ def create_object(object_list, object_height):
     while not interrupting the visibility of the road.
     Input: list which holds all the objects and the height of the object.
     Output: updated list which holds all the objects.'''
-    object_x = random.choice([random.randint(-TREE_WIDTH, (WINDOW_WIDTH / 2) - (LANE_WIDTH * 1.5) - TREE_WIDTH - MARGIN_FROM_ROAD), random.randint((WINDOW_WIDTH / 2) + (LANE_WIDTH * 1.5) + MARGIN_FROM_ROAD, WINDOW_WIDTH)])
+    object_x = random.choice([random.randint(-TREE_WIDTH, int((WINDOW_WIDTH / 2) - (LANE_WIDTH * 1.5) - TREE_WIDTH - MARGIN_FROM_ROAD)), random.randint(int((WINDOW_WIDTH / 2) + (LANE_WIDTH * 1.5) + MARGIN_FROM_ROAD), WINDOW_WIDTH)])
     object_list.append([object_x, -object_height])
     return object_list
 
